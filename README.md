@@ -1,49 +1,69 @@
-Titanic Survival Predictor 🚢
-An end-to-end machine learning pipeline that predicts passenger survival on the Titanic using Logistic Regression.
-Built with clean code architecture, reproducibility, and industry-grade structure to showcase production-ready ML skills.
+# Titanic Survival Predictor 🚢
 
-📂 Project Structure
+An end-to-end machine learning pipeline that predicts passenger survival on the Titanic using Logistic Regression.  
+Built with **clean code architecture**, **reproducibility**, and **industry-grade structure** to showcase production-ready ML skills.
+
+---
+
+## 📂 Project Structure
+
 titanic-survival-predictor/
 ├── config/
-│   └── config.yaml               # Project configs: paths, model hyperparams
+│ └── config.yaml # Project configs: paths, model hyperparams
 ├── data/
-│   ├── raw/                      # Original dataset (Titanic-Dataset.csv)
-│   ├── processed/                # Train, val, test splits
-│   └── interim/                  # (Optional cleaned data)
+│ ├── raw/ # Original dataset (Titanic-Dataset.csv)
+│ ├── processed/ # Train, val, test splits
+│ └── interim/ # (Optional cleaned data)
 ├── models/
-│   └── titanic_model.pkl         # Trained model
+│ └── titanic_model.pkl # Trained model
 ├── outputs/
-│   ├── confusion_matrix.png      # Confusion matrix plot
-│   ├── roc_curve.png             # ROC curve plot
-│   └── classification_report.txt # Text classification report
+│ ├── confusion_matrix.png # Confusion matrix plot
+│ ├── roc_curve.png # ROC curve plot
+│ └── classification_report.txt # Text classification report
 ├── src/
-│   ├── data/
-│   │   └── preprocess.py
-│   ├── features/
-│   │   └── build_features.py
-│   ├── models/
-│   │   ├── train_model.py
-│   │   └── evaluate_test.py
-│   └── utils/
-│       └── helpers.py
+│ ├── data/
+│ │ └── preprocess.py
+│ ├── features/
+│ │ └── build_features.py
+│ ├── models/
+│ │ ├── train_model.py
+│ │ └── evaluate_test.py
+│ └── utils/
+│ └── helpers.py
 ├── requirements.txt
 ├── .gitignore
 ├── README.md
-└── run.py                        # (Optional runner script)
+└── run.py # (Optional runner script)
 
-🚀 How to Run
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 How to Run
+
 1️⃣ Preprocess the data
-
+```bash
 python src/data/preprocess.py
-
 2️⃣ Train + validate model
 
+bash
+Copy
+Edit
 python src/models/train_model.py
-
 3️⃣ Evaluate on test set
 
+bash
+Copy
+Edit
 python src/models/evaluate_test.py
+Or run all at once:
 
+bash
+Copy
+Edit
+python run.py
 📊 Example Results
 Metric	Value
 Test Accuracy	0.79
@@ -57,4 +77,16 @@ Test F1-score (1)	0.74
 ✅ Confusion matrix + ROC curve saved in /outputs/
 ✅ Full metrics saved in models/model_metrics.json
 
-
+🛠 Requirements
+nginx
+Copy
+Edit
+pandas
+scikit-learn
+matplotlib
+seaborn
+pyyaml
+joblib
+yaml
+Copy
+Edit
