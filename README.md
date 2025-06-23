@@ -1,14 +1,9 @@
-```markdown
-# Titanic Survival Predictor 🚢
-
+Titanic Survival Predictor 🚢
 An end-to-end machine learning pipeline that predicts passenger survival on the Titanic using Logistic Regression.
 Built with **clean code architecture**, **reproducibility**, and **industry-grade structure** to showcase production-ready ML skills.
 
----
 
 📂 Project Structure
-
-```
 
 titanic-survival-predictor/
 ├── config/
