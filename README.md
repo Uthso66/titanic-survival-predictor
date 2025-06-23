@@ -1,46 +1,7 @@
-```markdown
-# Titanic Survival Predictor 🚢
+## Titanic Survival Predictor 🚢
 
 An end-to-end machine learning pipeline that predicts passenger survival on the Titanic using Logistic Regression.
 Built with **clean code architecture**, **reproducibility**, and **industry-grade structure** to showcase production-ready ML skills.
-
----
-
-## 📂 Project Structure
-
-```
-
-titanic-survival-predictor/
-├── config/
-│   └── config.yaml             \# Project configs: paths, model hyperparams
-├── data/
-│   ├── raw/                    \# Original dataset (Titanic-Dataset.csv)
-│   ├── processed/              \# Train, val, test splits
-│   └── interim/                \# (Optional cleaned data)
-├── models/
-│   └── titanic\_model.pkl       \# Trained model
-├── outputs/
-│   ├── confusion\_matrix.png    \# Confusion matrix plot
-│   ├── roc\_curve.png           \# ROC curve plot
-│   └── classification\_report.txt \# Text classification report
-├── src/
-│   ├── data/
-│   │   └── preprocess.py
-│   ├── features/
-│   │   └── build\_features.py
-│   ├── models/
-│   │   ├── train\_model.py
-│   │   └── evaluate\_test.py
-│   └── utils/
-│       └── helpers.py
-├── requirements.txt
-├── .gitignore
-├── README.md
-└── run.py                      \# (Optional runner script)
-
-````
-
----
 
 ## 🚀 How to Run
 
@@ -81,6 +42,10 @@ python run.py
 | Test Precision (1)  | 0.78  |
 | Test Recall (1)     | 0.70  |
 | Test F1-score (1)   | 0.74  |
+
+![confusion_matrix](https://github.com/user-attachments/assets/3b37b408-a829-4fbb-a586-3763d6d38e5e)
+
+![roc_curve](https://github.com/user-attachments/assets/706bac33-a4e0-4ea2-8730-e2f8f75cdd1d)
 
 ✅ Confusion matrix + ROC curve saved in `/outputs/`
 ✅ Full metrics saved in `models/model_metrics.json`
